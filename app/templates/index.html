@@ -1,0 +1,43 @@
+{% extends "base_boots.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block chat %}
+<h3>Hi, <b>{{current_user.username}}</b>!</h3>
+<nav aria-label="...">
+<ul class="pager">
+    <li class="previous{% if not prev_url %} disabled {% endif %}">
+        <a href="{{ prev_url or '#'}}">  <!-- '#' when there is no prev_url -> block here -->
+            <span aria-hidden="true">&xlArr;</span> Newer Chats
+        </a>
+    </li>
+
+
+    <li class="next {%if not next_url %} disabled {% endif %} " >
+        <a href="{{ next_url or '#' }}" >
+            Older Chats <span aria-hidden="true">&xrArr;</span>
+        </a>
+    </li>
+<br>
+
+</ul>
+</nav>
+
+{% for post in posts[::-1] %} <!-- user slice to revserse the chat  --> 
+ {% include '_post.html' %}
+{% endfor %}
+<br>
+{% endblock %}
+
+
+
+
+
+{% block app_content %}
+
+    {% if form %}
+        {{ wtf.quick_form(form) }}
+
+<br>
+{% endif %}
+{% endblock %}
+

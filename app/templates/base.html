@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    {% if title %}
+    <title> {{title}} </title>
+    {% else %}
+    <title> ____MyBlog___</title>
+    {% endif %}
+
+</head>
+<body>
+<div>
+    MyBlog:
+
+     <a href="{{url_for('index')}}"> Home </a>
+
+     {% if current_user.is_anonymous %}    <!-- if the user is not logged -->
+     <a href="{{url_for('login') }}">Login </a>
+     {% else %}
+
+     <a href="{{ url_for('user', username = current_user.username) }}" >Profile </a>
+     <a href="{{ url_for('logout') }}">Logout</a>
+     {% endif %}
+
+</div>
+
+<hr>
+{% block chat %}   {%endblock %}
+{% block content %}{% endblock %}
+
+{% with messages  = get_flashed_messages()%}    <!-- receive login users -->
+{% if messages %}
+<ul>
+    {% for msg in messages %}
+    <li>{{ msg }} </li>
+    {% endfor %}
+</ul>
+
+{% endif %}
+{% endwith %}
+
+</body>
+</html>

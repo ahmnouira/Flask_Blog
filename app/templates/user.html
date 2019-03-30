@@ -1,0 +1,35 @@
+{% extends "base_boots.html" %}
+
+{% block app_content %}
+<hr>
+<table>
+    <tr valign="top">
+        <td><img src="{{user.avatar(128)}}"></td> <!-- User.avatar method call -->
+        <td>
+            <h3> User: {{ user.username }} </h3>
+            {% if user.about_me %}<p> {{ user.about_me }} </p>{% endif %}
+            {% if user.last_seen %}<p> Last seen on: {{ user.last_seen }}</p>{% endif %}
+           <!-- {% if user == current_user %}
+            <p><a href="{{ url_for('edit_profile') }}">Edit my Profile</a></p>
+            {% endif %}  -->
+        </td>
+
+    </tr>
+</table>
+    <hr>
+<h2 > I will put more informations here</h2>
+{% for post in posts%}
+        {%include '_post.html' %}   <!-- invoke sub_template  -->
+    {% endfor %}
+{% if prev_url %}
+<a href="{{prev_url}}"> Newer Posts</a>
+{% endif %}
+
+{% if next_url %}
+<a href="{{next_url}}"> Older Post </a>
+{% endif %}
+
+
+{% endblock %}
+
+
