@@ -1,42 +1,7 @@
-2019-03-31 01:32:01,739 ERROR: Exception on /login [POST] [in /home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
-    return self.registry[key]
-KeyError: 140211782272768
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/routes.py", line 73, in login
-    user_ = User.query.filter_by(username=form_.username.data).first()
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask_sqlalchemy/__init__.py", line 514, in __get__
-    return type.query_class(mapper, session=self.sa.session())
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/sqlalchemy/orm/scoping.py", line 78, in __call__
-    return self.registry()
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/sqlalchemy/util/_collections.py", line 1012, in __call__
-    return self.registry.setdefault(key, self.createfunc())
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/sqlalchemy/orm/session.py", line 3206, in __call__
-    return self.class_(**local_kw)
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask_sqlalchemy/__init__.py", line 143, in __init__
-    bind = options.pop('bind', None) or db.engine
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask_sqlalchemy/__init__.py", line 877, in engine
-    return self.get_engine()
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask_sqlalchemy/__init__.py", line 896, in get_engine
-    return connector.get_engine()
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask_sqlalchemy/__init__.py", line 556, in get_engine
-    self._sa.apply_driver_hacks(self._app, info, options)
-  File "/home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/venv/lib/python3.5/site-packages/flask_sqlalchemy/__init__.py", line 830, in apply_driver_hacks
-    if info.drivername.startswith('mysql'):
-AttributeError: 'NoneType' object has no attribute 'drivername'
+2019-03-31 01:33:26,665 INFO: Blog Startup [in /home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
+2019-03-31 01:36:49,159 INFO: Blog Startup [in /home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
+2019-03-31 01:37:09,872 INFO: Blog Startup [in /home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
+2019-03-31 01:37:20,404 INFO: Blog Startup [in /home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
+2019-03-31 01:47:21,242 INFO: Blog Startup [in /home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
+2019-03-31 01:52:49,783 INFO: Blog Startup [in /home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
+2019-03-31 01:53:06,276 INFO: Blog Startup [in /home/ahmnouira/Desktop/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
