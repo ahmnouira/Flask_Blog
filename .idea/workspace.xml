@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46eb62d2-7c5b-49d2-ac77-655254f0a860" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/data.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/app/data.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base_boots.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base_boots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/email_/reset_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/email_/reset_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_ref/Screenshot from 2019-03-20 14-05-53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_ref/Screenshot from 2019-03-20 16-22-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.xsh" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.xsh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/alembic" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/alembic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/dotenv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/dotenv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install-3.5" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install-3.5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/flask" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/flask" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/gunicorn" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/gunicorn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/gunicorn_paster" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/gunicorn_paster" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/iptest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/iptest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/iptest3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/iptest3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/ipython" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/ipython" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/ipython3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/ipython3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/mako-render" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/mako-render" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip3.5" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3.5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pygmentize" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pygmentize" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pyjwt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pyjwt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python-config" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python-config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/wheel" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/wheel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/Flask-1.0.2.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/Flask-1.0.2.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/Mako-1.0.7.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/Mako-1.0.7.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/PyJWT-1.7.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/PyJWT-1.7.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/Pygments-2.3.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/Pygments-2.3.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/alembic-1.0.8.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/alembic-1.0.8.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/gunicorn-19.9.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/gunicorn-19.9.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/ipython-7.3.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/ipython-7.3.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/pip-19.0.3.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/pip-19.0.3.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/python_dotenv-0.10.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/python_dotenv-0.10.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/setuptools-40.8.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/setuptools-40.8.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/wheel-0.33.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/wheel-0.33.1.dist-info/RECORD" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46eb62d2-7c5b-49d2-ac77-655254f0a860" name="Default Changelist" comment="" />
+      <created>1554136461952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554136461952</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="24" width="1366" height="744" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14491653" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.3134058" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="2" visible="true" weight="0.3171875" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="right" id="R Graphics" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="R Packages" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+  </component>
+</project>
