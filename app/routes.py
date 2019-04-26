@@ -22,7 +22,7 @@ from werkzeug.urls import url_parse     #
 from flask_login import logout_user     # import logout_user
 from flask import url_for               # to generates URLs
 from datetime import datetime           # import datetime
-from camera import VideoCamera
+from app.camera import VideoCamera
 from flask import Response
 user_fake = {'username': 'Mohamed'}          # create a fake user
 posts_fake = [                               # create a fake posts : list of dict
