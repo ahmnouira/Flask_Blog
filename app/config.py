@@ -4,7 +4,9 @@ from dotenv import load_dotenv
 basedir = os.path.abspath(os.path.dirname(__file__))
 load_dotenv(os.path.join(basedir, '.env'))
 
+
 class Config(object):
+    MAX_ATTEMPTS = os.environ.get('MAX_ATTEMPTS') or 2
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you_will_never_guess'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
     SQLALCHEMY_TRACK_MODIFICATIONS = False

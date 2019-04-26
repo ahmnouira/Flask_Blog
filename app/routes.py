@@ -1,3 +1,5 @@
+from sqlalchemy.sql.functions import user
+
 from app import App                      # import the App instance from app folder
 from app import db                       # import database
 from app.models import User, Post        # import User Class, Post
@@ -35,6 +37,7 @@ posts_fake = [                               # create a fake posts : list of dic
                   'body': 'Can I plat this game'
               }
         ]
+attempts = 0 
 
 
 @App.route("/", methods=['GET', 'POST'])                # decorator, App : instance
@@ -64,6 +67,8 @@ def index():
 
 @App.route("/login", methods=['GET', 'POST'])    # this view function accepts GET , POST methods
 def login():
+    user_ = None
+    global attempts
     if current_user.is_authenticated:
         return redirect(url_for('index'))
 
@@ -72,15 +77,25 @@ def login():
     if form_.validate_on_submit():                              # when validate the from
         user_ = User.query.filter_by(username=form_.username.data).first()
         user_email= User.query.filter_by(email=form_.username.data).first()
+
+        if attempts >= int(App.config['MAX_ATTEMPTS']):
+            # print("attempts: ", attempts)
+            return render_template("locked.html", title="locked")
+
         if user_ is None or not user_.check_password(form_.password.data):  # no user input  or wrong password
             flash('Invalid username or password')
+            attempts += 1
+            # print("attempts : ", attempts)
             return redirect(url_for('login'))
+
             # form_.remember_me.data, form_.username.errors))    # .data : what the user has entered
         login_user(user_, remember=form_.remember_me.data)
         next_page = request.args.get('next')                     # request.args -> dict format
         if not next_page or url_parse(next_page).netloc != '':
+            attempts = 0
             next_page = url_for('index')
         return redirect(next_page)
+
     return render_template("Login.html", title="Log in", form=form_)
 
 

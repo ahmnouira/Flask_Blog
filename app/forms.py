@@ -7,7 +7,7 @@ from app.models import User
 
 
 class LoginForm(FlaskForm):    # create LoginForm class
-    username = StringField('Email address(text!):', validators=[DataRequired()])  # field required, type String
+    username = StringField('Username:', validators=[DataRequired()])      # field required, type String
     password = PasswordField('Password:', validators=[DataRequired()])    # field required , type password
     remember_me = BooleanField('Remember Me')
     submit = SubmitField('Log in')

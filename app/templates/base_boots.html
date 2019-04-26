@@ -1,5 +1,18 @@
 {% extends 'bootstrap/base.html' %}
 
+
+
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}" type="image/x-icon">
+
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+{% endblock%}
+
+
+
+
 {% block title %}
     {% if title %}{{ title }} {% else %}__MyBlog__ {% endif %}
 {% endblock %}
@@ -51,7 +64,12 @@
         {# application content needs to be provided in the app_content block #}
         {% block chat %}   {%endblock %}
         {% block app_content %}
-
-        {% endblock %}
     </div>
+        {% endblock %}
+
+
+  <!-- Footer -->
+
+
 {% endblock %}
+
