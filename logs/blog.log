@@ -2,5 +2,8 @@
 2019-04-26 02:46:52,241 INFO: Blog Startup [in /home/ahmnouira/Desktop/blog_flask/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
 2019-04-26 02:47:22,231 INFO: Blog Startup [in /home/ahmnouira/Desktop/blog_flask/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
 2019-04-26 02:47:54,206 INFO: Blog Startup [in /home/ahmnouira/Desktop/blog_flask/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
+<<<<<<< HEAD
 2019-04-26 03:24:33,529 INFO: Blog Startup [in /home/ahmnouira/Desktop/blog_flask/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
 2019-04-26 03:24:42,841 INFO: Blog Startup [in /home/ahmnouira/Desktop/blog_flask/Ahmed_blog/ahmed-nouira-blog4-V0.1.0/app/__init__.py:57]
+=======
+>>>>>>> 4ca7abe20812f85d1b334154806792db0e69c931
