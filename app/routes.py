@@ -22,6 +22,8 @@ from werkzeug.urls import url_parse     #
 from flask_login import logout_user     # import logout_user
 from flask import url_for               # to generates URLs
 from datetime import datetime           # import datetime
+from camera import VideoCamera
+from flask import Response
 user_fake = {'username': 'Mohamed'}          # create a fake user
 posts_fake = [                               # create a fake posts : list of dict
               {
@@ -38,6 +40,25 @@ posts_fake = [                               # create a fake posts : list of dic
               }
         ]
 attempts = 0 
+
+
+@login_required
+@App.route('/camera')
+def camera():
+    return render_template("camera.html", title="Camera")
+
+
+def gen(camera):
+    while True:
+        frame = camera.get_stream()
+        yield (b'--frame\r\n'
+               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
+
+
+@App.route('/video_feed')
+def video_feed():
+    return Response(gen(VideoCamera()),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 @App.route("/", methods=['GET', 'POST'])                # decorator, App : instance

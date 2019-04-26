@@ -38,9 +38,10 @@
                     {% if current_user.is_anonymous %}         <!-- if the user is not logged -->
                     <li><a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     {% else %}
-                    <li><a href="{{ url_for('edit_profile') }}">Edit my Profile</a></li>
-                    <li><a href="{{ url_for('user', username=current_user.username) }}"> <span class="glyphicon glyphicon-user"> Profile</a></li>
-                    <li><a href="{{ url_for('logout') }}"> <span class="glyphicon glyphicon-log-out"> Logout</a></li>
+                    <li><a href="{{ url_for('camera') }}"><span class="glyphicon glyphicon-facetime-video"></span> WebCam</a></li>
+                    <li><a href="{{ url_for('edit_profile') }}"> <span class=" 	glyphicon glyphicon-pencil"></span> EditProfile</a></li>
+                    <li><a href="{{ url_for('user', username=current_user.username) }}"> <span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                    <li><a href="{{ url_for('logout') }}"> <span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     {% endif %}
                 </ul>
             </div>
