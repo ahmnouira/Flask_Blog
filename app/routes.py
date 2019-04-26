@@ -1,5 +1,5 @@
 from sqlalchemy.sql.functions import user
-
+##
 from app import App                      # import the App instance from app folder
 from app import db                       # import database
 from app.models import User, Post        # import User Class, Post
