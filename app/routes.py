@@ -3,7 +3,7 @@ from sqlalchemy.sql.functions import user
 from app import App                      # import the App instance from app folder
 from app import db                       # import database
 from app.models import User, Post        # import User Class, Post
-from app.email import send_password_email
+from app.email import send_password_email, send_email
 from flask import render_template        # import render_template to use .html files
 from app.forms import LoginForm          # import LoginFrom
 from app.forms import RegisterForm       # import RegisterForm
@@ -11,6 +11,7 @@ from app.forms import EditProfileForm    # import EditProfileForm
 from app.forms import PostForm           # import PostForm
 from app.forms import ResetPasswordFormRequest  # import ResetPasswordFrom
 from app.forms import ResetForm         # import ResetForm
+from app.forms import EmailForm
 from flask import flash                 # import flash: to shows msg to user ( print )
 from flask import redirect              # to navigate to another URL
 from flask import get_flashed_messages
@@ -79,11 +80,15 @@ def index():
 
     next_url = url_for('index', page=all_posts.next_num) if all_posts.has_next else None  # check for next page
     prev_url = url_for('index', page=all_posts.prev_num) if all_posts.has_prev else None  # ckeck for previous page
+
     return render_template("index.html", title="Home Page", form=form_post, posts=all_posts.items, next_url=next_url,
                            prev_url=prev_url)    # the response
     # we send user dict
 
     # url_for() : name of the view function the some with mapURL
+
+
+
 
 
 @App.route("/login", methods=['GET', 'POST'])    # this view function accepts GET , POST methods
@@ -148,6 +153,8 @@ def user(username):
     user_porfile = User.query.filter_by(username=username).first_or_404()  # the first ( = exist 'username' ) or
     # 404 to the client
 
+    PATH= "/user/" + str(user_porfile.username) + "/sendEmail"
+
     posts = [
         {'author': user_porfile, 'body': 'Test post #1'},
         {'author': user_porfile, 'body': 'Test post #2'}
@@ -161,7 +168,29 @@ def user(username):
     # ckeck for previous page
     prev_url = url_for('user', username=user_porfile.username, page=my_posts.prev_num) if my_posts.has_prev else None
     return render_template('user.html', title="profile", user=user_porfile, posts=my_posts.items, next_url=next_url,
-                           prev_url=prev_url)
+                           prev_url=prev_url, PATH=PATH)
+
+
+@App.route('/user/<username>/sendEmail', methods=['GET', 'POST'])
+@login_required
+def sendEmail(username):
+    # user_profile ( receiver  user_profile.email)
+    # current_user ( sender : current_user.email)
+    user_porfile = User.query.filter_by(username=username).first_or_404()  # the first ( = exist 'username' ) or
+    email_form = EmailForm()
+    print(user_porfile.email)
+    print('current user', current_user.email)
+    if email_form.validate_on_submit():
+        subject = email_form.subject.data
+        body = email_form.mail.data
+        send_email(str(subject), sender=current_user.email, recipients=[user_porfile.email],
+                   text_body='',
+                   html_body=body + '''<br><h2> To reply go to <a href="https://ahmed-nouira-blog4.herokuapp.com"> The BLOG ^^ </a></h2>
+                   ''')
+
+        flash('Your Have send an Email to {}'.format(user_porfile.username))
+        return redirect(url_for('sendEmail', username=user_porfile.username))
+    return render_template('send_email.html', title="sendEmail", form=email_form)
 
 
 @App.route('/edit_profile', methods=['GET', 'POST'])

@@ -1,7 +1,7 @@
 from flask_mail import Message           # import Message
 from app import App, mail                # import App, mail
 from flask import render_template        # import render_template
-from threading import Thread             # import Thread to send the emails in background
+from threading import Thread             # import Thread to send the emails in background ( muti taches)
 
 
 def send_email(subject, sender, recipients, text_body, html_body):  # helper function from emails

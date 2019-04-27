@@ -11,7 +11,12 @@
             {% if user.last_seen %}<p> Last seen on: {{ user.last_seen }}</p>{% endif %}
            <!-- {% if user == current_user %}
             <p><a href="{{ url_for('edit_profile') }}">Edit my Profile</a></p>
-            {% endif %}  -->
+            {% endif %}
+            <p><a href="{{ PATH }}">Send Email</a><p> -->
+            <span class="alert alert-warning">
+             <a href="{{ PATH }}" class="alert-link">
+             Send Email
+             </a></span>
         </td>
 
     </tr>
