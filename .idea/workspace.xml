@@ -2,28 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbd4861b-8b84-427f-8357-c336fdff1085" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Blog_v1.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/camera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/app/data.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/_post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base_boots.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base_boots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log.2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log.3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog.log.4" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log.4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog.log.5" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog.log.6" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log.6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog.log.7" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog.log.8" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log.8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog.log.9" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog.log.9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/blog.log.9" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/email.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -45,11 +35,16 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/camera.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/user.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -58,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/app/templates/send_email.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -67,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/app/routes.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1248">
-              <caret line="234" lean-forward="true" selection-start-line="234" selection-end-line="234" />
+              <caret line="234" selection-start-line="234" selection-end-line="234" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -88,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/app/templates/Login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -97,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/app/templates/email_/email.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -114,18 +109,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/email_/reset_password.txt">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="787">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
-              <folding>
-                <element signature="e#0#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -156,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="261" />
     <option name="y" value="101" />
     <option name="width" value="1364" />
@@ -248,7 +231,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="7" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19802731" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -326,9 +309,6 @@
     <entry file="file://$PROJECT_DIR$/app/templates/edit_profile.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/camera.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-630" />
@@ -371,7 +351,7 @@
     <entry file="file://$PROJECT_DIR$/app/routes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1248">
-          <caret line="234" lean-forward="true" selection-start-line="234" selection-end-line="234" />
+          <caret line="234" selection-start-line="234" selection-end-line="234" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -381,21 +361,21 @@
     <entry file="file://$PROJECT_DIR$/app/templates/email_/email.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/send_email.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -409,7 +389,7 @@
     <entry file="file://$PROJECT_DIR$/app/templates/Login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -422,6 +402,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/camera.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
