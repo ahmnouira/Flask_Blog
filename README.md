@@ -1,6 +1,12 @@
 # MyBlog
 This is a social blog web based application where people can talk using real time messages
 
+## Overview
+Some photos about this project:
+![register_page](/img-ref/github_images/register.png)
+![talk_page](/img-ref/github_images/talk.png)
+![webcam_page](/img-ref/github_images/webcam.png)
+
 ## Running this app locally 
 
 1. [install Python][]
