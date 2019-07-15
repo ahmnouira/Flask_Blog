@@ -3,9 +3,9 @@ This is a social blog web based application where people can talk using real tim
 
 ## Overview
 Some photos about this project:
-![register_page](/img-ref/github_images/register.png)
-![talk_page](/img-ref/github_images/talk.png)
-![webcam_page](/img-ref/github_images/webcam.png)
+![register_page](/img_ref/github_images/register.png)
+![talk_page](/img_ref/github_images/talk.png)
+![webcam_page](/img_ref/github_images/webcam.png)
 
 ## Running this app locally 
 
