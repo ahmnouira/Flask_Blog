@@ -16,7 +16,7 @@ ipython==7.3.0
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
 jedi==0.13.3
-Jinja2==2.10
+Jinja2==2.11.3
 Mako==1.0.7
 MarkupSafe==1.1.1
 numpy==1.16.3
