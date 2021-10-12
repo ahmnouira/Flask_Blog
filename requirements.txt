@@ -21,7 +21,7 @@ Mako==1.0.7
 MarkupSafe==1.1.1
 numpy==1.16.3
 opencv-contrib-python==4.1.0.25
-opencv-python==4.1.0.25
+opencv-python==4.2.0.32
 parso==0.3.4
 pexpect==4.6.0
 pickleshare==0.7.5
