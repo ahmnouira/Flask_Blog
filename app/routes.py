@@ -1,25 +1,25 @@
 from sqlalchemy.sql.functions import user
-##
 from app import App                      # import the App instance from app folder
-from app import db                       # import database
-from app.models import User, Post        # import User Class, Post
+from app import db                       
+from app.models import User, Post        
 from app.email import send_password_email, send_email
-from flask import render_template        # import render_template to use .html files
-from app.forms import LoginForm          # import LoginFrom
-from app.forms import RegisterForm       # import RegisterForm
-from app.forms import EditProfileForm    # import EditProfileForm
-from app.forms import PostForm           # import PostForm
-from app.forms import ResetPasswordFormRequest  # import ResetPasswordFrom
-from app.forms import ResetForm         # import ResetForm
+from flask import render_template        
+from app.forms import LoginForm          
+from app.forms import RegisterForm       
+from app.forms import EditProfileForm   
+from app.forms import PostForm           
+from app.forms import ResetPasswordFormRequest  
+from app.forms import ResetForm         
 from app.forms import EmailForm
 from flask import flash                 # import flash: to shows msg to user ( print )
 from flask import redirect              # to navigate to another URL
 from flask import get_flashed_messages
-from flask_login import current_user    # import current_user
-from flask_login import login_user      # import login_user
-from flask_login import login_required  # import login_required
-from flask import request               # contains all the informations that the client sent
-from werkzeug.urls import url_parse     #
+from flask_login import current_user    
+from flask_login import login_user     
+from flask_login import login_required 
+# contains all the information that the client sent
+from flask import request              
+from werkzeug.urls import url_parse    
 from flask_login import logout_user     # import logout_user
 from flask import url_for               # to generates URLs
 from datetime import datetime           # import datetime
@@ -255,4 +255,3 @@ def before_request():
     if current_user.is_authenticated:
         current_user.last_seen = datetime.utcnow()
         db.session.commit()
-
