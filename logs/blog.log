@@ -1,2 +1,40 @@
-2023-11-05 22:25:06,536 INFO: Blog Startup [in /Users/macos/Desktop/works/Flask_Blog/app/__init__.py:57]
-2023-11-05 22:25:53,979 INFO: Blog Startup [in /Users/macos/Desktop/works/Flask_Blog/app/__init__.py:57]
+2025-03-11 01:36:59,312 ERROR: Exception on /register [POST] [in /Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/flask/app.py:875]
+Traceback (most recent call last):
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/wtforms/validators.py", line 401, in __call__
+    import email_validator
+ModuleNotFoundError: No module named 'email_validator'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/app/routes.py", line 147, in register
+    if form_reg.validate_on_submit():
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/wtforms/form.py", line 330, in validate
+    return super().validate(extra)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/wtforms/form.py", line 147, in validate
+    if not field.validate(self, extra):
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/wtforms/fields/core.py", line 234, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/wtforms/fields/core.py", line 254, in _run_validation_chain
+    validator(form, self)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/macos/Desktop/works/flask/Flask_Blog/venv/lib/python3.13/site-packages/wtforms/validators.py", line 403, in __call__
+    raise Exception(
+        "Install 'email_validator' for email validation support."
+    ) from exc
+Exception: Install 'email_validator' for email validation support.
